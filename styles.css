@@ -1210,6 +1210,66 @@ h2 {
   gap: 12px;
 }
 
+.lineQrCard {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  width: min(100%, 560px);
+  margin: 32px auto 0;
+  padding: 14px 28px 14px 14px;
+  color: var(--navy);
+  background: white;
+  text-align: left;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.lineQrCard:hover,
+.lineQrCard:focus-visible {
+  box-shadow: 0 18px 44px rgba(5, 13, 33, 0.28);
+  transform: translateY(-3px);
+}
+
+.lineQrFrame {
+  display: block;
+  padding: 5px;
+  background: white;
+}
+
+.lineQrFrame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.lineQrCopy {
+  display: grid;
+  gap: 8px;
+}
+
+.lineQrKicker {
+  color: var(--crimson);
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.lineQrCopy strong {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.lineQrHint {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .buttonOutlineLight {
   border: 1px solid rgba(255,255,255,0.55);
   color: white;
@@ -1229,6 +1289,10 @@ h2 {
   color: rgba(255,255,255,0.45);
   font-size: 9px;
   letter-spacing: 0.08em;
+}
+
+.consultation .contactNumbers {
+  margin-top: 18px;
 }
 
 footer {
@@ -1530,6 +1594,20 @@ footer > div:last-child {
 
   .faqList summary {
     font-size: 20px;
+  }
+
+  .lineQrCard {
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 16px;
+    padding: 10px 16px 10px 10px;
+  }
+
+  .lineQrCopy strong {
+    font-size: 21px;
+  }
+
+  .lineQrHint {
+    font-size: 11px;
   }
 
   footer {
