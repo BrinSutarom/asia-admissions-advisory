@@ -715,6 +715,220 @@ h2 {
   text-transform: uppercase;
 }
 
+.timeline {
+  padding: 140px 0;
+  background: white;
+}
+
+.timelineHeading {
+  display: grid;
+  grid-template-columns: 1fr 0.72fr;
+  align-items: end;
+  gap: 90px;
+  margin-bottom: 58px;
+}
+
+.timelineHeading > p {
+  max-width: 470px;
+  margin: 0;
+  padding-left: 28px;
+  border-left: 2px solid var(--crimson);
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.engagementWindow {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: center;
+  gap: 52px;
+  padding: 34px 38px;
+  color: white;
+  background: var(--navy);
+}
+
+.engagementWindow > div {
+  display: grid;
+  gap: 8px;
+}
+
+.engagementWindow span {
+  color: #df98a4;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.engagementWindow strong {
+  font-family: var(--display);
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.engagementWindow p {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(255,255,255,0.65);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.engagementPhases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--line);
+  list-style: none;
+}
+
+.engagementPhases li {
+  min-height: 255px;
+  padding: 30px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.engagementPhases li > span {
+  color: var(--crimson);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.engagementPhases strong {
+  display: block;
+  margin-top: 70px;
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.engagementPhases p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.regionCalendarGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 72px;
+}
+
+.calendarCard {
+  padding: 38px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.calendarTitle {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  align-items: start;
+  gap: 22px;
+  margin-bottom: 34px;
+}
+
+.calendarTitle > span {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  color: white;
+  background: var(--crimson);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.singaporeCard .calendarTitle > span {
+  background: var(--navy);
+}
+
+.calendarTitle small {
+  color: var(--crimson);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.calendarTitle h3 {
+  margin: 6px 0 0;
+  font-family: var(--display);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.calendarCard ol {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.calendarCard li {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  gap: 22px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.calendarCard li > span {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 17px;
+}
+
+.calendarCard li p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.calendarGuidance {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 22px;
+}
+
+.calendarGuidance > p {
+  max-width: 720px;
+  margin: 0;
+  color: #85827a;
+  font-size: 9px;
+  line-height: 1.65;
+}
+
+.officialCalendarLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.officialCalendarLinks a {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--line);
+  color: var(--crimson);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
 .approach {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -1422,6 +1636,23 @@ footer > div:last-child {
     grid-template-columns: 1fr;
   }
 
+  .timelineHeading {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .timelineHeading > p {
+    max-width: 650px;
+  }
+
+  .engagementPhases {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .regionCalendarGrid {
+    grid-template-columns: 1fr;
+  }
+
   .projectGrid article {
     min-height: 320px;
   }
@@ -1536,9 +1767,49 @@ footer > div:last-child {
   .services,
   .projects,
   .founder,
-  .consultation {
+  .consultation,
+  .timeline {
     padding-top: 95px;
     padding-bottom: 95px;
+  }
+
+  .engagementWindow {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 30px;
+  }
+
+  .engagementPhases {
+    grid-template-columns: 1fr;
+  }
+
+  .engagementPhases li {
+    min-height: auto;
+  }
+
+  .engagementPhases strong {
+    margin-top: 42px;
+  }
+
+  .regionCalendarGrid {
+    margin-top: 52px;
+  }
+
+  .calendarCard {
+    padding: 26px;
+  }
+
+  .calendarCard li {
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+  }
+
+  .calendarGuidance {
+    flex-direction: column;
+  }
+
+  .officialCalendarLinks {
+    justify-content: flex-start;
   }
 
   .founderGrid {
